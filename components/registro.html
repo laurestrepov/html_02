@@ -8,12 +8,12 @@
   <body>
     <div>
       <center>
-        <img src="assets/img/img_01.jpg" style="width:5%"/>
+        <img src="../assets/img/img2.jpg" style="width:5%"/>
       </center>
     </div>
     <div style="width:100%">
       <center>
-        <h2>Ingresar</h2>
+        <h2>Registrarse</h2>
       </center>
     </div>
     <div style="width:100%">
@@ -27,6 +27,20 @@
               <tr>
                 <td><label for="lname">Apellidos:</label></td>
                 <td><input type="text" name=lname><br></td>
+              </tr>
+              <tr>
+                <td><label for="gender">Género:</label></td>
+                <td>
+                  <select name="gender">
+                    <option value="male">Masculino</Option>
+                    <option value="female">Femenino</Option>
+                    <option value="other">NSNR</Option>
+                  </Select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="bday">Fecha de nacimiento (A/M/D):</label></td>
+                <td><input type="date" name=dbay><br></td>
               </tr>
               <tr>
                 <td><label for="user">Usuario:</label></td>
@@ -47,8 +61,8 @@
               <tr>
                 <td colspan="2">
                     <center>
-                      <button type="submit" value="Enviar">Login</button>
-                      <button type="reset" value="Cancelar">Cancel</button>
+                      <button type="submit" value="Enviar">Registrarme</button>
+                      <button type="reset" value="Cancelar">Cancelar</button>
                     </center>
                 </td>
               </tr>
