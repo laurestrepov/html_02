@@ -1,4 +1,19 @@
-h1{
-    color: red;
-    font-size: 16 px;
+.Class1{
+  text-align: center;
+  color: #f5ecef;
+  background-color: #0b6f67;
+  font-size: 16 px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.Centrado{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+}
+.Centrado table{
+  text-align: justify;
+  margin: auto;
 }
