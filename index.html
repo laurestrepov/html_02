@@ -4,40 +4,58 @@
 	  <meta charset="UTF-8">
 	  <title>Don't open</title>
     <link rel="stylesheet" href="assets/Styles/styles.css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <div style="width:100%" class="class1">
-      <h1>Ingresar</h1>
-    </div>
-    <div class="centrado">
-      <img src="assets/img/img_01.jpg" style="width:5%"/>
-    </div>
-    <div style="width:100%" class="centrado">
-      <form>
-        <table>
-          <tr>
-            <td><label for="user">User name:</label></td>
-            <td><input type="text" name=user><br></td>
-          </tr>
-          <tr>
-            <td><label for="pswd">Password:</label></td>
-            <td> <input type="password" name=pswd><br></td>
-          </tr>
-          <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" name="email"><br></td>
-          </tr>
-          <tr>
-            <td colspan="2" class="centrado">
-                <button type="submit" value="Enviar">Login</button>
-                <button type="reset" value="Cancelar">Cancel</button>
-            </td>
-          </tr>
-        </table>
-      </form>
-      <div>
-        <a href="components/registro.html">Crear cuenta</a>
+    <div class="container-fluid">
+      <div style="width:100%" class="class1">
+        <h1>Ingresar</h1>
+      </div>
+      <div class="centrado">
+        <img src="assets/img/img_01.jpg" class="center-block" alt="Responsive image">
+      </div>
+      <div class="centrado">
+        <div class="row">
+          <form>
+            <div class="row">
+              <div class="col-md-1 col-md-offset-5">
+                <label for="user">User name:</label>
+              </div>
+              <div class="col-md-1">
+                <input type="text" name=user><br>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-1 col-md-offset-5">
+                <label for="pswd">Password:</label>
+              </div>
+              <div class="col-md-1">
+                <input type="password" name=pswd><br>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-1 col-md-offset-5">
+                <label for="email">Email:</label>
+              </div>
+              <div class="col-md-1">
+                <input type="email" name="email"><br>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-primary">Enviar</button>
+                <button type="button" class="btn btn-default">Cancelar</button>
+              </div>
+            </div>
+          </form>
+          <div class="row">
+            <div class="col-md-12">
+              <a href="components/registro.html">Crear cuenta</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
