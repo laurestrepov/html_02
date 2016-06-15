@@ -44,3 +44,9 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+#error{
+  color: #9f2505;
+  font-size: 12px;
+  margin: auto;
+}
