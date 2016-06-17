@@ -5,6 +5,8 @@
 	  <title>Don't open</title>
     <link rel="stylesheet" href="../assets/Styles/styles.css"></link>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script> <!-- Jquery-->
+    <script type="text/javascript" src="../assets/scripts/scripts.js"></script><!-- Llamar script-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
@@ -18,7 +20,7 @@
       </div>
       <div class="centrado">
         <div class="row">
-          <form class="form-group">
+          <form class="form-group" id="Registro">
             <div class="row">
               <div class="col-md-2 col-md-offset-3 myform">
                 <label>Nombre completo:</label>
@@ -29,7 +31,7 @@
                 <p class="help-block text-center">Nombres</p>
               </div>
               <div class="col-md-2">
-                <input type="text" class="form-control" id=lname>
+                <input type="text" class="form-control" id="lname">
                 <p class="help-block text-center">Apellidos</p>
               </div>
             </div>
@@ -38,13 +40,13 @@
                 <label class="center-block" for="bday">Fecha de nacimiento:</label>
               </div>
               <div class="col-md-2">
-                <input type="datetime" class="form-control" id=dbay placeholder="(AA/MM/DD)">
+                <input type="datetime" class="form-control" id="bday" placeholder="(AA/MM/DD)">
               </div>
               <div class="col-md-1 myform">
                 <label for="gender">Sexo:</label>
               </div>
               <div class="col-md-1">
-                <select name="gender" class="form-control">
+                <select name="gender" class="form-control" id="sexo">
                   <option value="male">M</Option>
                   <option value="female">F</Option>
                   <option value="other">NSNR</Option>
@@ -56,7 +58,7 @@
                 <label for="user">Usuario:</label>
               </div>
               <div class="col-md-2">
-                <input type="text" class="form-control" id=user><br>
+                <input type="text" class="form-control" id="user"><br>
               </div>
             </div>
             <div class="row">
@@ -64,7 +66,7 @@
                 <label for="pswd">Contraseña:</label>
               </div>
               <div class="col-md-2">
-                <input type="password" class="form-control" id=pswd><br>
+                <input type="password" class="form-control" id="pswd"><br>
               </div>
             </div>
             <div class="row">
@@ -72,7 +74,7 @@
                 <label for="pswd2">Repita la contraseña:</label>
               </div>
               <div class="col-md-2">
-                <input type="password" class="form-control" id=pswd2><br>
+                <input type="password" class="form-control" id="pswd2"><br>
               </div>
             </div>
             <div class="row">
@@ -104,7 +106,7 @@
             </div>
             <div class="row cener-block">
               <div class="col-md-12">
-                <button type="submit" class="btn btn-primary">Registrarme</button>
+                <button type="button" class="btn btn-primary" onclick="BuscarVacio ()">Registrarme</button>
                 <a href="../index.html" class="btn btn-default" role="button" type="cancel">Cancelar</a>
                 <a href="pag_usuario.html" class="btn btn-info" role="button">Ver registros</a>
               </div>
